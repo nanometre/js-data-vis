@@ -14,15 +14,6 @@ window.addEventListener('DOMContentLoaded', async function(){
     }])
 })
 
-document.querySelector("#btnLoad")
-    .addEventListener('click', async function(){
-        let data = await loadData();
-        chart.updateSeries([{
-            'name': 'Sales',
-            'data': data.yearly2
-        }])
-    })
-
 const options = {
     chart:{
         'type':'line',
